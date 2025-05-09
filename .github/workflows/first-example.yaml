@@ -1,0 +1,24 @@
+name: My First Workflow
+
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: welcome amessage
+        run: echo "Welcome to my first workflow"
+      
+      - name: list files
+        run: ls -al
+
+      - name: Read file
+        run: cat README.md
+      
