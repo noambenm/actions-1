@@ -9,4 +9,6 @@ jobs:
         uses: actions/checkout@v4
 
       - name: exec shell
-        run: ./asci.sh
+        run: |
+          chmod +x ./asci.sh
+          ./asci.sh
