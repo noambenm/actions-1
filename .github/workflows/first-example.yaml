@@ -4,17 +4,9 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: welcome message
-        run: echo "Welcome to my first workflow"
-      
-      - name: list files
-        run: ls -al
-
-      - name: Read file
-        run: cat README.md
-      
+      - name: exec shell
+        run: ./asci.sh
