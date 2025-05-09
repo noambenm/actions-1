@@ -6,7 +6,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: welcome amessage
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: welcome message
         run: echo "Welcome to my first workflow"
       
       - name: list files
